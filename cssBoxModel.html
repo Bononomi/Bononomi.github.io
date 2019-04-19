@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--cssBoxModel.html-->
+<html lang = "pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>CSS Básico</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Lobster|Rubik|Titillium+Web');
+		/*Seletores de Elementos*/
+		body{
+			background-color: #161f2d;
+			color: rgb(255,255,255); 
+			font-family: 'Rubik', sans-serif;
+			text-align: justify;
+
+		}
+
+		h1,h2{
+			color: #3584ff;
+			font-family: 'Lobster', cursive;
+		}
+		span{
+			font-weight: bold;
+			color: orange;
+		}
+
+		/*Pseudo classe*/
+		main p:nth-of-type(2n){ /*even / par*/
+			background-color: #3d4c63;
+			color: #ffffff;
+		}
+		main p:nth-of-type(2n+1){ /*2n+1 / ímpar*/
+			background-color: #1c3254;
+			color: #ffffff;
+		}
+		h1:hover{ /*Ao passar o mouse por cima*/
+			background-color: white;
+			border: 2px black solid; 
+			width: fit-content ;
+		}
+
+		/*zSeletor de classe/ classificação*/
+		/*Utiliza-se ponto . para a classe*/
+		.caixa{
+			width: 630px;
+			height: 200px;
+			border: 3px orange ridge;
+			margin: 0 auto;
+			padding: 30px 40px;
+		}
+		.circulo{
+			width: 200px;
+			height: 200px; /*Mesma largura e altura*/
+			border: 2px dotted white;
+			border-radius: 50%; /*Arredondamento*/
+			float: left;	/*Uma do lado da outra*/
+			box-sizing: border-box;
+			text-align: center;
+			padding-top: 70px;
+			margin-left: 10px;
+
+		}
+		.circulo:hover{
+			box-shadow: 0 0 10px orange;
+		}
+		.sombra{
+			box-shadow: 0 0 10px white;
+			border-radius: 10px;
+		}
+
+		/*Seletor de identificação ID*/
+		/*Utiliza-se o # para id*/
+		#principal{
+			background-color: black;
+		}
+		#primeira{
+			background-color: rgba(38,62,142,0.5);
+			/*Cor com transparência em 30%*/
+		}
+		#segunda{
+			background-color: rgba(38,62,142,0.5);
+		}
+		#terceira{
+			background-color: rgba(38,62,142,0.5);
+		}
+
+		
+
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Olá Maravilhoso Mundo Mágico</h1>
+	
+	<div id= "principal" class= "caixa sombra"> <!--Dentro da DIV principal-->
+		<div id="primeira" class="circulo">
+			<p>Conteúdo <span>1ª DIV</span></p>
+		</div><!--1ª DIV-->
+			
+		<div id="segunda" class="circulo">
+			<p>Conteúdo <span>2ª DIV</span></p>
+		</div><!--2ª DIV-->
+			
+		<div id="terceira" class="circulo">
+			<p>Conteúdo <span>3ª DIV</span></p>
+		</div><!--3ª DIV-->
+			
+	</div> 				  <!--Fora da DIV principal-->
+	
+	<main>
+	<h2>Primeiro Parágrafo</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et semper arcu. Quisque faucibus quis dolor a condimentum. Integer egestas augue vitae lorem mattis, at mattis lacus hendrerit. Sed tempus luctus sollicitudin. Vivamus scelerisque bibendum ex sed pulvinar. Nullam sollicitudin nunc nec leo viverra, vitae imperdiet quam euismod. Duis posuere neque pretium nulla rhoncus, vel vehicula massa maximus. In porta tellus non pharetra euismod. Fusce ultrices viverra diam nec elementum.</p>
+
+	<h2>Segundo Parágrafo</h2>
+	<p>Sed cursus laoreet vestibulum. Nulla aliquam aliquet porttitor. In sed dui dictum, vehicula turpis nec, efficitur lorem. Aenean laoreet euismod maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque sed ultricies nunc. Suspendisse a sapien eget tortor ultricies vestibulum sit amet sit amet felis. Pellentesque hendrerit erat ante. Pellentesque ullamcorper vestibulum molestie. Mauris nulla magna, ultricies id volutpat id, sodales a nulla. Sed nec enim ac quam hendrerit pharetra.</p>
+
+	<h2>Terceiro Parágrafo</h2>
+	<p>In faucibus augue malesuada, varius sapien non, congue mauris. In pretium, elit id efficitur consectetur, nulla mi luctus diam, eget pulvinar elit eros ut lorem. In pellentesque porttitor metus vel feugiat. In ac dictum orci. Morbi luctus, mauris in fringilla facilisis, odio tellus luctus arcu, vel ultricies risus erat sit amet purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam neque neque, ultrices vel nunc non, tristique posuere libero. Nunc mattis feugiat nisi tincidunt tincidunt.</p>
+
+	<h2>Quarto Parágrafo</h2>
+	<p>Morbi vel elit molestie, maximus justo id, dictum nisl. Nunc eu semper tellus. Maecenas nunc mauris, maximus non elit sit amet, viverra accumsan lacus. Nam vel urna ut nisi interdum interdum id id purus. Sed et lectus odio. Vivamus ullamcorper augue ac turpis lobortis mollis. Sed aliquet ante quis venenatis sodales. Nulla facilisi. Sed sollicitudin massa ornare, facilisis eros vel, feugiat erat. Pellentesque id ante porta, ullamcorper magna eu, consequat risus. Suspendisse sit amet luctus nibh, vel volutpat lectus. Nulla vel porttitor tortor.</p>
+
+	<h2>Quinto Parágrafo</h2>
+	<p>Aliquam a nulla lorem. Quisque ultricies leo sed pellentesque cursus. Suspendisse potenti. Pellentesque dignissim pellentesque odio nec luctus. Nullam dictum magna quis vehicula sodales. Cras erat metus, accumsan at pellentesque at, placerat vitae dui. In hac habitasse platea dictumst. Morbi nulla enim, cursus id ipsum non, feugiat condimentum nisl. Morbi molestie consectetur quam, sit amet placerat arcu egestas vel. Pellentesque dignissim sed libero non vestibulum. Donec et dolor volutpat, tincidunt tortor auctor, mollis purus. Ut eget nisi massa. Proin magna odio, blandit ac feugiat vel, semper et leo. Duis sodales id elit laoreet tempus. Aenean massa erat, facilisis vel felis sit amet, ultrices convallis erat.</p>
+
+	<h7>Sexto Parágrafo</h7>
+	<p>Proin varius urna nec nibh sodales, ut varius magna iaculis. Quisque fermentum, turpis in tincidunt vulputate, quam ex lacinia mi, eu facilisis justo nunc a tortor. Sed id lorem nisl. Nam in tempus sapien, eget rhoncus justo. Etiam leo sapien, porta non iaculis ut, ornare eu est. Vestibulum sit amet velit sed mi sodales euismod vel a nulla. Fusce risus mi, suscipit pharetra ultricies vel, blandit sed magna. In at bibendum neque. Praesent gravida orci felis, id maximus urna vestibulum nec.</p>
+
+	<h2>Sétimo Parágrafo</h2>
+	<p>Phasellus nec aliquam nisi, at pretium nunc. Ut congue nisi sit amet neque vestibulum tristique. Pellentesque ut neque eu odio ornare maximus nec non leo. Aenean sodales, dolor sit amet vulputate tincidunt, felis metus efficitur odio, et pulvinar dui ante vitae enim. Suspendisse suscipit ante nec egestas viverra. Mauris mattis lacinia mauris quis eleifend. Quisque quis leo porta, faucibus metus a, commodo lorem. Fusce placerat diam vitae mi fringilla gravida. Proin euismod odio orci, ut egestas odio feugiat in.</p>
+
+	<h2>Oitavo Parágrafo</h2>
+	<p>Suspendisse potenti. Fusce non sodales mauris, in interdum arcu. Nullam at turpis vel massa consectetur dignissim. Ut vehicula nec sapien sit amet placerat. Integer pulvinar lacus in leo vehicula aliquet. Nam ac justo ac lectus commodo dapibus. Ut ligula turpis, auctor vel condimentum at, commodo tincidunt arcu. Donec fringilla sem quam, non feugiat ante condimentum ut. Duis condimentum elit at metus gravida, eget porttitor velit semper. Nunc non libero a nibh luctus vehicula et ut lectus. Sed placerat vitae turpis et vulputate. Cras lacus metus, mollis facilisis vehicula at, dapibus ut arcu. Fusce congue tempor lorem, at viverra massa blandit nec.</p>
+
+	<h2>Nono Parágrafo</h2>
+	<p>Nam rutrum mauris ac vestibulum maximus. In vel sem molestie, scelerisque est in, rutrum libero. Curabitur hendrerit volutpat ligula, et commodo ipsum vulputate vel. Sed fermentum ac lacus quis tristique. Fusce aliquet, diam laoreet feugiat pulvinar, massa sem iaculis felis, non condimentum lorem dolor sodales velit. Suspendisse non porta dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed sit amet convallis mauris, ultrices dapibus tellus. Aliquam gravida sollicitudin tortor, id dignissim nisl semper eu. Nullam pharetra, metus id convallis tempor, nulla lacus malesuada tellus, quis ultricies mauris ex eu justo. Cras et feugiat orci, non venenatis purus.</p>
+
+	<h2>Décimo Parágrafo</h2>
+	<p>Duis nec felis luctus, bibendum neque in, porta nibh. Nulla facilisi. Integer suscipit, velit id consequat tincidunt, sem nisl tempus arcu, nec dictum turpis odio vitae dui. Nam augue dui, vehicula sed elit quis, faucibus blandit mi. Etiam tincidunt imperdiet feugiat. Morbi ornare, lorem id egestas gravida, nisi enim porta orci, eu facilisis dui justo at nulla. Duis efficitur sodales consequat. Vivamus aliquet non diam ut bibendum. Cras at consequat justo, eget ornare dui.</p>
+	</main>
+</body>
+</html>
