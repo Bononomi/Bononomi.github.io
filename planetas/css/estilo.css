@@ -1,0 +1,76 @@
+html{
+	/*Rolagem*/
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: black;
+	color: yellow;
+}
+
+	h1,h2,h3{
+		color: white;
+		text-shadow: 2px 2px 2px yellow;
+
+	}
+
+	 	.astro{
+		max-width: 500px; 
+    	border-radius: 50%; /*Arredondamento*/
+    	border: 2px solid yellow; /*Borda*/
+    	display: block;
+    	margin: 0 auto; /*Centraliza*/
+    	box-shadow: 0 0 15px white; /*Brilho*/
+	}
+
+		a.btn{
+			border-radius: 5px; /*Arredondamento*/
+			text-decoration: none; /*Retira sublinhado*/
+			text-align: center; /*Texto centralizado*/
+			color: black; /*Cor do texto*/
+			background-color: white; /*Cor de fundo*/
+			width: 50px; /*Largura*/
+			display: block; /*Kit centralizado*/
+			margin: 0 auto; /*Kit centralizado*/
+			padding: 10px; /*Preenchimento*/
+			float: right; /*A direita*/
+		}
+
+		a.btn:hover{
+			box-shadow: 0 0 5px yellow; /*Passar o mouse*/
+		}
+
+		/*Estilização do menu*/
+		/*https://www.w3schools.com/css/css_navbar.asp*/
+
+		ul{
+			position: sticky;
+			top: 0;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: white;
+		}
+
+		li{
+			float: left;
+		}
+
+		/*Link dentro da lista*/
+
+		li a{
+			display: block;
+			background-color: white;
+			font-size: 22px;
+			padding: 14px 16px;
+			text-align: center;
+			text-decoration: none;
+
+		}
+
+		li a:hover{
+			background-color: yellow;
+		}
+
+
