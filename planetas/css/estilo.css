@@ -73,4 +73,42 @@ body{
 			background-color: yellow;
 		}
 
+		.ativo{
+			background-color: yellow;
+		}
 
+		.img{
+			max-width: 100px;
+		}
+
+		.tblmercurio{
+			background-color: #d3d3d3;
+		}
+
+		.tblvenus{
+			background-color: #DAA520;
+		}
+
+		.tblterra{
+			background-color: #120a8f;
+		}
+
+		.tblmarte{
+			background-color: #ff0000;
+		}
+
+		.tbljupiter{
+			background-color: #ebc8b2;
+		}
+
+		.tblsaturno{
+			background-color: #deb887;
+		}
+
+		.tblurano{
+			background-color: #add8e6;
+		}
+
+		.tblnetuno{
+			background-color: #007fff;
+		}
