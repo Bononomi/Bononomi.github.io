@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+
+
+    <title>Hello, Bootstrap world!</title>
+  </head>
+  	<body>
+  			<h1>Hello, Bootstrap world!</h1>
+  		<div class="jumbotron text-center">
+  			<h1>Exemplo de Jumbotron</h1>
+  			<p>Resize this responsive page to see the effect!</p> 
+		</div>
+
+	<main class = "container">
+		<section class = "row">
+			<article class="col">
+				
+				<h2 class= "display-1">Coluna 1</h2>
+				<p class= "text-primary">Conteúdo coluna 1</p>
+
+			<figure id="img1" class="collapse">	
+				<a href="https://s3.gaming-cdn.com/images/products/305/screenshot/alien-isolation-wallpaper-5.jpg" 
+				data-toggle="lightbox">
+				<img class= "img-fluid mx-auto d-block img-thumbnail" src="https://s3.gaming-cdn.com/images/products/305/screenshot/alien-isolation-wallpaper-5.jpg">
+				</a>
+			</figure>
+				<button data-toggle="collapse" 
+				data-target="#img1" 
+				class="tbn btn-primary"> Mostrar Imagem
+				</button> 
+			</article>
+			
+			<article class="col">
+				<h2 class= "display-2">Coluna 2</h2>
+				<p class= "text-danger">Conteúdo coluna 2</p>
+					<figure id="img2" class="collapse">
+						<a href="https://gpstatic.com/acache/10/96/10/uk/s3-9572a1aef325e81571539458cf8c2323.jpg" 
+						data-toggle="lightbox">
+						<img class= "img-fluid mx-auto d-block img-thumbnail" src="https://gpstatic.com/acache/10/96/10/uk/s3-9572a1aef325e81571539458cf8c2323.jpg">
+						</a>
+					</figure>
+				<button data-toggle="collapse" 
+				data-target="#img2" 
+				class="tbn btn-primary"> Mostrar Imagem
+				</button>
+			</article>
+
+			<article class="col">
+				<h2 class= "display-3">Coluna 3</h2>
+				<p class="text-light" style = "background: black;">Conteúdo coluna 3</p>
+					<figure id="img3" class="collapse show" >
+						<a href="https://cdn.mos.cms.futurecdn.net/c4c19c4550c8c57cc500241fed8061b5.jpg" 
+						data-toggle="lightbox">
+						<img class= "img-fluid mx-auto d-block img-thumbnail" src="https://cdn.mos.cms.futurecdn.net/c4c19c4550c8c57cc500241fed8061b5.jpg">
+						</a>
+					</figure>
+				<button data-toggle="collapse" 
+				data-target="#img3" 
+				class="tbn btn-primary"> Mostrar Imagem 
+				</button>
+
+			</article>
+		</section>
+	</main>
+
+	<h2>Imagem no Bootstrap</h2>
+	<img class= "img-fluid mx-auto d-block img-thumbnail" src="https://store-images.s-microsoft.com/image/apps.17952.68893806363683384.55eaca3a-8306-4de9-86b3-fbdbb6e226cd.be481c00-f050-4ec5-b815-6e74ab2826a7?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF">
+    <!-- Optional JavaScript -->
+   
+
+	<h2 data-target="#imgX" data-toggle="collapse">Abre e fecha</h2>
+		<div id="imgX" class="collapse"> 
+			<img class= "img-fluid mx-auto d-block img-thumbnail" src="https://www.casasbahia-imagens.com.br/html/conteudo-produto/336/3684828/imagens/alien-isolation-sega.jpg">
+		</div>
+
+
+	<h2>Janela Modal</h2>
+	<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" 
+data-toggle="modal" 
+data-target="#myModal">
+  Excluir
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Exclusão total</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Deseja excluir tudo?
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" 
+        data-dismiss="modal">Fechar
+    	</button>
+      </div>
+
+    </div>
+  </div>
+</div>		
+
+		<h2>Exemplo de Lightbox</h2>
+			<a href="https://bloody-disgusting.com/wp-content/uploads/2015/11/AlienIsolationMod.jpg" 
+			data-toggle="lightbox">
+                <img src="https://bloody-disgusting.com/wp-content/uploads/2015/11/AlienIsolationMod.jpg" class="img-fluid">
+            </a>
+	 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+	<script type="text/javascript">
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+	</script>
+  </body>
+</html>
